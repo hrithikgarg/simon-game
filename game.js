@@ -43,7 +43,7 @@ $(".btn").click(function(){
 });
 
 function makeSound(onClickColor){
-    var audio = new Audio("https://github.com/hrithikgarg/simon-game/blob/main/"+onClickColor + ".mp3");
+    var audio = new Audio(onClickColor + ".mp3");
     audio.play();   
 }
 
