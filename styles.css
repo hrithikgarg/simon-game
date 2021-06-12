@@ -22,6 +22,10 @@ body {
   color: #23d41d;
 
 }
+footer {
+  color: #DBEDF3;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
 .btn {
   margin: 25px;
   display: inline-block;
