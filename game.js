@@ -85,7 +85,8 @@ var isCalled = true;
 $("#start").click(function(){
     if(isCalled){
         $("#start").text("😁Click me to start😁");
-        nextSequence();
+         setTimeout(() => {nextSequence();
+        }, '700');
         isCalled = false;   
     }
 });
