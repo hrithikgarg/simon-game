@@ -68,7 +68,7 @@ function checkAnswer(currentLevel){
 }
 
 function makeSound(onClickColor){
-    var audio = new Audio("sounds/" + onClickColor + ".mp3");
+    var audio = new Audio( onClickColor + ".mp3");
     audio.play();   
 }
 
