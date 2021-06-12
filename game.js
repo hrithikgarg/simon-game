@@ -7,19 +7,6 @@ var userClickedPattern = [];
 
 
 var Level = 0;
-function winGame(){
-    $("body").addClass("win");
-    makeSound("wrong");
-    setTimeout(function(){
-         $("body").removeClass("win");
-     },'200');
-     $("#level-title").text("Hurray Vanshika You Win🍕🍕");
-
-     isCalled = true;
-     Level = 0;
-     gamePattern = [];
-
-}
 function nextSequence(){
     userClickedPattern = [];
     Level++;
@@ -56,7 +43,7 @@ $(".btn").click(function(){
 });
 
 function makeSound(onClickColor){
-    var audio = new Audio("sounds/" + onClickColor + ".mp3");
+    var audio = new Audio(onClickColor + ".mp3");
     audio.play();   
 }
 
@@ -78,12 +65,6 @@ function checkAnswer(currentLevel){
         },'200');
         $("#level-title").text("Game Over, Press Any Key to Restart");
 
-        isCalled = true;
-        Level = 0;
-        gamePattern = [];
-   }
-   else if(gamePattern.length === userClickedPattern.length && Level == 10){
-        winGame();
         isCalled = true;
         Level = 0;
         gamePattern = [];
